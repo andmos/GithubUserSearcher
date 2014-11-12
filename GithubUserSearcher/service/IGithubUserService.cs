@@ -6,6 +6,6 @@ namespace GithubUserSearcher
 {
 	public interface IGithubUserService
 	{
-		Task<IEnumerable<GithubUser>> GetGithubUser (string username);
+		Task<GithubUser> GetGithubUser (string username);
 	}
 }

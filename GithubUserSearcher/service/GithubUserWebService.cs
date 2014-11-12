@@ -8,9 +8,9 @@ using ModernHttpClient;
 
 namespace GithubUserSearcher
 {
-	public class GithubUserWebService
+	public class GithubUserWebService : IGithubUserService
 	{
-		public async Task<IEnumerable<GithubUser>> GetGithubUser (string username)
+		public async Task<GithubUser> GetGithubUser (string username)
 		{
 			try
 			{
@@ -44,9 +44,9 @@ namespace GithubUserSearcher
 			return Encoding.GetEncoding ("iso-8859-1").GetString (liquorStoreProductByteArray, 0, liquorStoreProductByteArray.Length);
 
 		}
-		private static IEnumerable<GithubUser> ParseJSONToGithubUser(string response)
+		private static GithubUser ParseJSONToGithubUser(string response)
 		{
-			return JsonConvert.DeserializeObject<IEnumerable<GithubUser>> (response); 
+			return JsonConvert.DeserializeObject<GithubUser> (response); 
 		}
 	}
 }

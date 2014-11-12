@@ -9,10 +9,7 @@ namespace GithubUserSearcher
 		{
 		}
 
-
-
 		public event PropertyChangedEventHandler PropertyChanged;
-
 
 	}
 }
