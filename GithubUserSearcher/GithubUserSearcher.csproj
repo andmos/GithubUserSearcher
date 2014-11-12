@@ -41,6 +41,10 @@
     <Compile Include="model\GithubUser.cs" />
     <Compile Include="service\GithubUserWebService.cs" />
     <Compile Include="service\IGithubUserService.cs" />
+    <Compile Include="Pages\SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\SearchPageViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
@@ -76,5 +80,12 @@
   <ItemGroup>
     <Folder Include="model\" />
     <Folder Include="service\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\SearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -69,6 +69,6 @@ Global
 		{F84E19C5-B51B-422D-A349-8354FCB11346}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = GithubUserSearcher\GithubUserSearcher.csproj
+		StartupItem = iOS\GithubUserSearcher.iOS.csproj
 	EndGlobalSection
 EndGlobal
