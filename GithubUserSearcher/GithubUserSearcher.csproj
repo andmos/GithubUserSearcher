@@ -50,6 +50,10 @@
     <Compile Include="model\GithubUsersCache.cs" />
     <Compile Include="model\Container.cs" />
     <Compile Include="Controls\CircleImage.cs" />
+    <Compile Include="Pages\GithubUserPage.xaml.cs">
+      <DependentUpon>GithubUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\GithubUserPageViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
@@ -91,6 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\SearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\GithubUserPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

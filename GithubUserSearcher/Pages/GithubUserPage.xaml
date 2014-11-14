@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:me="clr-namespace:GithubUserSearcher.Controls;assembly=GithubUserSearcher"
+    x:Class="GithubUserSearcher.GithubUserPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20" 
+        Spacing="20" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Center">
+
+            <me:CircleImage
+                    x:Name="rbi" 
+                    WidthRequest="150" 
+                    HeightRequest="150"  
+                    BorderColor="White"
+                    FileSource="hipsterpng.png">
+            </me:CircleImage>
+            <Switch BindingContext="{x:Reference rbi}"
+                IsToggled="{Binding HasBorder, Mode=OneWayToSource}" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

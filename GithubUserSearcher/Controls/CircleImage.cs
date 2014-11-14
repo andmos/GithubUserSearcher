@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace GithubUserSearcher.Contols
+namespace GithubUserSearcher.Controls
 {
 	public class CircleImage : Image
 	{
