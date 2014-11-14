@@ -3,13 +3,13 @@ using System.ComponentModel;
 
 namespace GithubUserSearcher
 {
-	public class SearchPageViewModel : INotifyPropertyChanged
+	public class SearchPageViewModel : ObservableBase
 	{
 		public SearchPageViewModel ()
 		{
 		}
 
-		public event PropertyChangedEventHandler PropertyChanged;
+
 
 	}
 }

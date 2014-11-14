@@ -1,6 +1,7 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace GithubUserSearcher
 {	
@@ -9,7 +10,10 @@ namespace GithubUserSearcher
 		public GithubUserPage ()
 		{
 			InitializeComponent ();
+		
 		}
+	
+
 	}
 }
 

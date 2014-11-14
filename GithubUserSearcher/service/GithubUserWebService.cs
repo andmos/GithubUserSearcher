@@ -14,7 +14,7 @@ namespace GithubUserSearcher
 		{
 			try
 			{
-				var githubUserFromService = await DownloadByteArrayAsync("https://osrc.dfm.io/" + username);
+				var githubUserFromService = await DownloadByteArrayAsync("https://osrc.dfm.io/andmos.json");
 				return await Task.Factory.StartNew(() =>ParseJSONToGithubUser(DecodeByteArrayToString(githubUserFromService)));
 			}
 			catch (Exception e) 
@@ -23,7 +23,7 @@ namespace GithubUserSearcher
 			}
 		}
 
-		private static async Task<byte[]> DownloadByteArrayAsync(string url)
+		private async Task<byte[]> DownloadByteArrayAsync(string url)
 		{
 			using (var response = await DownloadAsync(url))
 			{
@@ -39,9 +39,9 @@ namespace GithubUserSearcher
 			}
 		}
 
-		private static string DecodeByteArrayToString (byte[] liquorStoreProductByteArray)
+		private static string DecodeByteArrayToString (byte[] githubUserByteArray)
 		{
-			return Encoding.GetEncoding ("iso-8859-1").GetString (liquorStoreProductByteArray, 0, liquorStoreProductByteArray.Length);
+			return Encoding.GetEncoding ("utf-8").GetString (githubUserByteArray, 0, githubUserByteArray.Length);
 
 		}
 		private static GithubUser ParseJSONToGithubUser(string response)

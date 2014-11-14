@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using MonoTouch.UIKit;
 using Xamarin.Forms.Platform.iOS;
 using System.Drawing;
-using GithubUserSearcher.Contols;
+using GithubUserSearcher.Controls;
 using GithubUsersSearcher.iOS.Controls;
 
 [assembly: ExportRendererAttribute(typeof(CircleImage), typeof(CircleImageRenderer))]
