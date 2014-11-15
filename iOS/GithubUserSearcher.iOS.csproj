@@ -123,4 +123,7 @@
   <ItemGroup>
     <Folder Include="Controls\" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\andmos.json" />
+  </ItemGroup>
 </Project>

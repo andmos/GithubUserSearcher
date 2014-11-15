@@ -10,9 +10,9 @@ namespace GithubUserSearcher
 		public GithubUserPage ()
 		{
 			InitializeComponent ();
-		
+
 		}
-	
+
 
 	}
 }
