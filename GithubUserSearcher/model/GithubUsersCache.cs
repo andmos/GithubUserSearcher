@@ -29,7 +29,7 @@ namespace GithubUserSearcher
 
 		public void AddGithubUserToStorage (GithubUser user)
 		{
-			m_githubUsersCache.Add (user.username, user); 
+			m_githubUsersCache.Add (user.UserName, user); 
 		}
 
 
