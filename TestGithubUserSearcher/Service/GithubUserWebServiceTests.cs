@@ -9,12 +9,14 @@ namespace TestGithubUserSearcher {
 		private GithubUserWebService githubUserWebService;
 
 		[TestFixtureSetUp]
-		public void Init() {
+		public void Init() 
+		{
 			githubUserWebService = new GithubUserWebService();
 		}
 
 		[Test()]
-		public async Task GetGithubUser_ValidGithubUserName_GitHubUserIsFetched() {
+		public async Task GetGithubUser_ValidGithubUserName_GitHubUserIsFetched() 
+		{
 			const string UserName = "Sankra";
 
 			var user = await githubUserWebService.GetGithubUser(UserName);

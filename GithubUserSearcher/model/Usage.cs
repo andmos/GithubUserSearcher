@@ -5,11 +5,11 @@ namespace GithubUserSearcher
 {
 	public class Usage
 	{
-		public List<int> day { get; set; }
-		public List<Event> events { get; set; }
-		public List<Language> languages { get; set; }
+		public IEnumerable<int> day { get; set; }
+		public IEnumerable<Event> events { get; set; }
+		public IEnumerable<Language> languages { get; set; }
 		public int total { get; set; }
-		public List<int> week { get; set; }
+		public IEnumerable<int> week { get; set; }
 	}
 }
 

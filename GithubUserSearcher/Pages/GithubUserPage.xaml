@@ -15,9 +15,11 @@
                     BorderColor="White"
                     FileSource="hipsterpng.png">
             </me:CircleImage>
+            <Label Text="{Binding Name, Mode=TwoWay}"/>
             <Switch BindingContext="{x:Reference rbi}"
                 IsToggled="{Binding HasBorder, Mode=OneWayToSource}" />
 
         </StackLayout>
+		
     </ContentPage.Content>
 </ContentPage>

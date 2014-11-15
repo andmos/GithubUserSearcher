@@ -8,7 +8,7 @@ namespace GithubUserSearcher.iOS
 		public CompositionRoot ()
 		{
 			var container = Container.Instance = new FermiContainer (); 
-			container.Register<IGithubUserService, FilebasedGithubUserService>(); 
+			container.Register<IGithubUserService, GithubUserWebService>(); 
 			container.Register<IDataStorage, GithubUsersCache> (); 
 		}
 	}
