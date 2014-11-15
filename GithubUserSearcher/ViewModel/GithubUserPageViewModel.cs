@@ -15,7 +15,7 @@ namespace GithubUserSearcher
 		public GithubUserPageViewModel (GithubUser githubUser)
 		{
 			m_githubUser = githubUser; 
-			m_name = githubUser.name;
+			m_name = githubUser.Name;
 		}
 
 		public string Name
