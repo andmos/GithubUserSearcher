@@ -14,8 +14,8 @@ namespace GithubUserSearcher
 		{
 			try
 			{
-				var githubUserFromService = await DownloadByteArrayAsync("https://osrc.dfm.io/andmos.json");
-				return await Task.Factory.StartNew(() =>ParseJSONToGithubUser(DecodeByteArrayToString(githubUserFromService)));
+				var githubUserFromService = await DownloadByteArrayAsync("https://osrc.dfm.io/" + username + ".json");
+				return await Task.Factory.StartNew(() => ParseJSONToGithubUser(DecodeByteArrayToString(githubUserFromService)));
 			}
 			catch (Exception e) 
 			{
